@@ -4,6 +4,8 @@ import { Container, Grid,} from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
 import  { useState, useEffect } from 'react';
 import { Api } from '../services/api';
+import AddIcon from '@mui/icons-material/Add';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 function Productos() {
 
   // fech voluntarios
@@ -20,9 +22,14 @@ function Productos() {
 
     Voluntarios();
   }, []);
-
-
+  //  agregar productos
+  // function AgregarProductos() {
+    // const [agregarProductos, setAgregarProductos] = useState([]);
+  
+    // Resto del código...
+  // }
   const totalProductos = productos.length;
+ 
   
   return (
     <>
@@ -61,7 +68,7 @@ function Productos() {
           </Grid>  
       </div>
       <div className='form-container'>
-      <button type='submit' className='boton'>Agregar pedido</button>
+      <button type='submit' className='boton'>Agregar pedido<AddIcon/></button>
       <form className='formulario'>
       <button type='submit' className='boton'><SearchIcon/></button>
       <input type="search" id="search_input" placeholder="Buscar productos..."/>
@@ -89,6 +96,7 @@ function Productos() {
               <td>{productos.phoneNumber}</td>
               <td>{productos.email}</td>
               <td>{productos.state}</td>
+              <td><DeleteForeverIcon/></td>
             </tr>
           ))}
         </tbody>
