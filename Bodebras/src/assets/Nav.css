@@ -1,0 +1,39 @@
+header{
+  width: 100vw;
+}
+#logo{
+  height: 70%;
+}
+.navbar {
+  display: flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  margin: 0;
+  justify-content: space-around;
+  background:var(--primary) ; 
+  align-items: center;
+  height: 4rem;
+}
+
+  /* Estilos para los enlaces (links) */
+  .navbar .link {
+    color:var(--back-text); 
+    text-decoration: none;
+    margin-right: 1rem; 
+    font-weight: 500; 
+  }
+  
+  /* Estilos para los enlaces al pasar el mouse (hover) */
+  .navbar a:hover {
+    color:var(--secondary); 
+  }
+  
+  /* Estilos para el logotipo */
+  .navbar .logo {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+  }
+  

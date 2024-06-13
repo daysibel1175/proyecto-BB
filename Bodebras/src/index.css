@@ -1,0 +1,43 @@
+:root {
+    --primary: #1C244B;
+    --secondary: #D9623B;
+    --back-borde: #5A5658;
+    --text: #000000;
+    --back-text: #FFFFFF;
+    --links: #2642D9;
+    --stars: #FDCC0D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family:Poppins, sans serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* 
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+    font-family: "Roboto", Sans-serif;
+    font-size: 15px;
+    font-weight: 400; */

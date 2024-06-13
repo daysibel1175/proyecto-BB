@@ -1,0 +1,43 @@
+
+#containerLogin{
+    background-color:var(--primary);
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--borde);
+    padding: 2rem 3rem;
+    color: var(--back-text);
+    gap: 2rem;
+}
+#loginForm{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+/* Estilos para los enlaces (links) */
+.input{
+  border-radius: 10px;
+  padding: 6px;
+  background-color: var(--back-text);
+  border:1px solid white;
+}
+
+.button{
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+ 
+}
