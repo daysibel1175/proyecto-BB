@@ -29,6 +29,10 @@ body{
     flex-direction: column;
     
 }
+.link {
+  color:var(--back-text); 
+  text-decoration: none;
+}
 /* 
     --e-global-typography-primary-font-family: "Poppins";
     --e-global-typography-primary-font-weight: 600;

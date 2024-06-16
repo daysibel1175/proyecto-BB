@@ -1,0 +1,46 @@
+/* RegistroProductos.css */
+.registro-container {
+    max-width: 60%;
+    margin: 0;
+    height: 100%;
+  }
+  .tab-buttons{
+    width: 100%;
+
+  }
+  .tab-buttons button {
+    background-color: var(--primary);
+    border: none;
+    padding: 10px 16px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 15px 15px 0 0; 
+    color: var(--back-text);
+  }
+  .tab-buttons button.active {
+    border-bottom:  1px solid var(--primary);
+  }
+  
+  .tab-buttons button:not(.active) {
+    border-bottom: 1px solid var(--secondary); /* Borde inferior gris claro */
+  }
+  
+  .tab-content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--primary);
+    color: var(--back-text);
+  }
+  .tab-input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+  }
+  .input-label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  

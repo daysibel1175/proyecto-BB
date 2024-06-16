@@ -55,6 +55,11 @@ button.boton{
   border: 0;
   border-radius: 10px;
   color: var(--back-text);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:0.5rem;
 }
 input#search_input {
   border: 1px solid var(--back-borde);

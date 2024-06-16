@@ -6,6 +6,9 @@ import  { useState, useEffect } from 'react';
 import { Api } from '../services/api';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Link } from 'react-router-dom';
+import './Registros';
+
 function Productos() {
 
   // fech voluntarios
@@ -68,7 +71,7 @@ function Productos() {
           </Grid>  
       </div>
       <div className='form-container'>
-      <button type='submit' className='boton'>Agregar pedido<AddIcon/></button>
+      <button type='submit' className='boton'><AddIcon/> <Link to="/registros" className='link'>Agregar pedidos</Link></button>
       <form className='formulario'>
       <button type='submit' className='boton'><SearchIcon/></button>
       <input type="search" id="search_input" placeholder="Buscar productos..."/>

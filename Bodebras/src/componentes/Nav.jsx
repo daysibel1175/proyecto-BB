@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '.././assets/Nav.css'
 import logo from '../../src/images/LOGO.jpg'
 import { username } from '../componentes/Login';
+
 function Nav() {
   console.log(username)
     return (
