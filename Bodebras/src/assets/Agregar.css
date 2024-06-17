@@ -43,4 +43,9 @@
     flex-direction: column;
     gap: 0.3rem;
   }
+ .box{
+    width: inherit;
+    height: 100px;
+    text-align: start;
+  }
   

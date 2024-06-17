@@ -1,0 +1,15 @@
+
+.banner{
+    background: url('../images/banner.png');
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background-size:contain;
+    background-position: start;
+    background-attachment: fixed;
+    z-index: 100;
+    background-repeat: no-repeat;
+}

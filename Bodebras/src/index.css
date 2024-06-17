@@ -33,6 +33,9 @@ body{
   color:var(--back-text); 
   text-decoration: none;
 }
+.list{
+  list-style:none;
+}
 /* 
     --e-global-typography-primary-font-family: "Poppins";
     --e-global-typography-primary-font-weight: 600;

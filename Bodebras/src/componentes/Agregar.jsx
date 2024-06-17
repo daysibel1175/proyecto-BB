@@ -21,7 +21,7 @@ const Agregar = () => {
           className={activeTab === "envio" ? "active" : ""}
           onClick={() => handleTabChange("envio")}
         >
-          Información de Envío
+          Información de Envio
         </button>
         <button
           className={activeTab === "pago" ? "active" : ""}
@@ -72,17 +72,17 @@ const Agregar = () => {
           </div>
 
           <div className="input-label">
-            <label htmlFor="precio">Precio:</label>
+            <label htmlFor="">Medidas del producto:</label>
             <input
               type="text"
               id="precio"
               name="precio"
-              placeholder="Ingrese el precio del producto"
+              placeholder="AxLxC"
               className="tab-input"
             />
           </div>
           <div className="input-label">
-            <label htmlFor="medidas">Medidas del producto:</label>
+            <label htmlFor="medidas">Material y peso soportado:</label>
             <input
               type="text"
               id="medidas"
@@ -91,7 +91,17 @@ const Agregar = () => {
               className="tab-input"
             />
           </div>
-        </div>
+          <div className='input-label'>
+         <label htmlFor="observaciongeneral">Observacion general:</label>
+         <textarea
+              name="observaciongeneral"
+              cols="6"
+              rows="10"
+              placeholder="el pedido puede ser entregado a las 8am, el pedido no puede entregarse de noche"
+              className="tab-input box"
+            />
+       </div>
+                  </div>
       )}
 
       {activeTab === "envio" && (
@@ -117,25 +127,49 @@ const Agregar = () => {
       )}
       {activeTab === "pago" && (
         <div className="tab-content">
-          <input
-            type="text"
-            name="pago"
-            placeholder="Información de pago"
-            className="tab-input"
-          />
+         <div className='input-label'>
+          <label htmlFor="metododepago">metodo de Pago:</label>
+          <input type="text" id="metodpdepago" name="metododepago" placeholder="efectivo" className='tab-input'/> 
+        </div>
+        <div className='input-label'>
+         <label htmlFor="valordelproducto">Valor del producto:</label>
+         <input type="text" id="valordelproducto" name="valordelproducto" placeholder="23$" className='tab-input'/> 
+       </div>
         </div>
       )}
 
       {activeTab === "contacto" && (
         <div className="tab-content">
-          <input
-            type="text"
-            name="contacto"
-            placeholder="Informaciones de contacto"
-            className="tab-input"
-          />
+           <div className='input-label'>
+         <label htmlFor="Nombre">Nombre Completo:</label>
+         <input type="text" id="nombre" name="nombre" placeholder=" Simon Lopez" className='tab-input'/> 
+       </div>
+          <div className='input-label'>
+         <label htmlFor="telefono">telefono del cliente:</label>
+         <input type="text" id="telefono" name="telefono" placeholder="25 16546 5454" className='tab-input'/> 
+       </div>
+       <div className='input-label'>
+         <label htmlFor="documentodeidentidad">Documento de identidad:</label>
+         <input type="text" id="documentodeidentidad" name="documentodeidentidad" placeholder="cedula" className='tab-input'/> 
+       </div>
+       <div className='input-label'>
+         <label htmlFor="numerodeidentidad">Numero de identidad:</label>
+         <input type="text" id="numerodeidentidad" name="numerodeidentidad" placeholder="554.448.544" className='tab-input'/> 
+       </div>
+       <div className='input-label'>
+         <label htmlFor="observaciondelcliente">Observacion del cliente:</label>
+         <textarea
+              name="observaciondelcliente"
+              cols="6"
+              rows="10"
+              placeholder="el pedido puede ser entregado a familiares, hermana, johanna lopez, 12.488.561; padre jose lopez, 12.486.135"
+              className="tab-input box"
+            />
+       </div>
         </div>
+        
       )}
+
     </div>
   );
 };

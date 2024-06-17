@@ -1,0 +1,28 @@
+.footer{
+        display: flex;
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 30%;
+        margin: 0;
+        justify-content: space-around;
+        background:var(--primary) ; 
+        align-items: center;
+        color:var(--back-text);
+        padding: 3rem;
+}
+.logo-footer{
+    width: 50%;
+}
+.footer-rigth{
+    align-items: flex-start;
+    gap: 1rem;   
+    padding: 1rem; 
+}
+.list{
+    line-height: 2rem;
+}
+.listas{
+    padding: 0;
+}
