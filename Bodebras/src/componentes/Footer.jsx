@@ -17,12 +17,12 @@ function Footer() {
     return ( 
          <footer className="footer">
               <Grid container spacing={2} style={{textAlign:"start"}}>
-        <Grid item xs={12} md={6} className='footer-rigth' style={{display:"flex", flexDirection:"column", justifyContent:"space-around"}}>
+        <Grid item xs={12} md={3} className='footer-rigth' style={{display:"flex", flexDirection:"column", justifyContent:"space-around"}}>
           <img src={logo} alt="Logo" className='logo-footer'/>
-          <p>Descripción de la empresa o del sitio web.</p>
+          <p>Descripcion de la pagina en un resumen.</p>
         </Grid>
         
-        <Grid item xs={12} md={2} className='listas'>
+        <Grid item xs={12} md={3} className='listas'>
             <h4>Servicios</h4>
           <ul className='list'>
             <li><Link href="/soporte" className='link'><LocalShippingIcon/>Preceso de Entregas</Link></li>
@@ -31,7 +31,7 @@ function Footer() {
             <li><Link href="/sobre-nosotros" className='link'><WhereToVoteIcon/>Cobertura</Link></li>
           </ul>
         </Grid>
-        <Grid item xs={12} md={2} className='listas'>
+        <Grid item xs={12} md={3} className='listas'>
             <h4>Soporte</h4>
           <ul className='list'>
             <li><Link href="/soporte" className='link'><SupportAgentIcon/>Atencion al cliente</Link></li>
@@ -39,7 +39,7 @@ function Footer() {
             <li><Link href="/preguntas-frecuentes" className='link'><InfoIcon/>Preguntas Frecuentes</Link></li>
           </ul>
         </Grid>
-        <Grid item xs={12} md={2} className='listas'>
+        <Grid item xs={12} md={3} className='listas'>
           <h4>Contactenos</h4>
           <ul className='list'>
             <li><Link href="mailto:email@example.com" className='link'><MailOutlineIcon/>ayuda@bodebras.com</Link></li>
@@ -48,7 +48,11 @@ function Footer() {
             <li><Link href="https://www.instagram.com/" className='link'><InstagramIcon/>@bodebras</Link></li>
           </ul>
         </Grid>
+        <Grid item xs={12} md={12} style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+        <span>Todos los derechos reservados para Bodebras</span>
+</Grid>
       </Grid>
+      
       </footer>
       
      

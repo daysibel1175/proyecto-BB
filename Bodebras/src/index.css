@@ -33,7 +33,7 @@ body{
   color:var(--back-text); 
   text-decoration: none;
 }
-.list{
+ul{
   list-style:none;
 }
 /* 

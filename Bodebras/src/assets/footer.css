@@ -10,7 +10,7 @@
         background:var(--primary) ; 
         align-items: center;
         color:var(--back-text);
-        padding: 3rem;
+        padding: 1rem 2rem;
 }
 .logo-footer{
     width: 50%;
@@ -18,11 +18,24 @@
 .footer-rigth{
     align-items: flex-start;
     gap: 1rem;   
-    padding: 1rem; 
+    padding: 0; 
 }
 .list{
     line-height: 2rem;
+    align-items: flex-start;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
 }
-.listas{
-    padding: 0;
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.listas .link{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.listas .link, .list li{
+gap: 1rem;}
