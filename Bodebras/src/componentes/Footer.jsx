@@ -23,7 +23,7 @@ function Footer() {
         </Grid>
         
         <Grid item xs={12} md={3} className='listas'>
-            <h4>Servicios</h4>
+            <h3>Servicios</h3>
           <ul className='list'>
             <li><Link href="/soporte" className='link'><LocalShippingIcon/>Preceso de Entregas</Link></li>
             <li><Link href="/ayuda" className='link'><PaymentIcon/>Metodos de pago</Link></li>
@@ -32,7 +32,7 @@ function Footer() {
           </ul>
         </Grid>
         <Grid item xs={12} md={3} className='listas'>
-            <h4>Soporte</h4>
+            <h3>Soporte</h3>
           <ul className='list'>
             <li><Link href="/soporte" className='link'><SupportAgentIcon/>Atencion al cliente</Link></li>
             <li><Link href="/ayuda" className='link'><HelpOutlineIcon/>Ayuda</Link></li>
@@ -40,7 +40,7 @@ function Footer() {
           </ul>
         </Grid>
         <Grid item xs={12} md={3} className='listas'>
-          <h4>Contactenos</h4>
+          <h3>Contactenos</h3>
           <ul className='list'>
             <li><Link href="mailto:email@example.com" className='link'><MailOutlineIcon/>ayuda@bodebras.com</Link></li>
             <li><PhoneIcon/>988658475</li>

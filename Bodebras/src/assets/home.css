@@ -1,15 +1,34 @@
 
 .banner{
-    background: url('../images/banner.png');
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55%;
-    background-size:contain;
+   background: url("../images/banner.png");
+    margin-bottom: 1rem;
+    background-attachment: scroll;
     background-position: start;
-    background-attachment: fixed;
-    z-index: 100;
     background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100vw;
+    min-width: 100vw;
+    height: 390px;
+    max-height: 390px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .banner h1 {
+    animation: slideIn 1s ease-out forwards;
+  }
+header, footer {
+    flex: 0 0 auto; 
+  }
+  
+ 

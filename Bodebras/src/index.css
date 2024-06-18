@@ -23,11 +23,6 @@ body{
     background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
 }
 .link {
   color:var(--back-text); 

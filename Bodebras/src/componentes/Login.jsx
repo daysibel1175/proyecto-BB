@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '.././assets/Login.css'
-import Nav from '.././componentes/Nav';
 import { useNavigate } from "react-router-dom";
 import { Api } from '.././services/api'
 import Visibility from '@mui/icons-material/VisibilityOutlined';
@@ -41,7 +40,7 @@ function Login() {
           return; 
       }
   
-        const response = await Api.get(`/login?email=${email}&password=${password}`);
+        const response = await Api.get(`/login/lideres?email=${email}&password=${password}`);
         const username = response.data;
         console.log(username);
         navigate("/Productos");
@@ -56,8 +55,8 @@ function Login() {
 
   return (
     
-    <body>
-      <header><Nav/></header>  
+    <div className='body-login'>
+ 
     <div id='containerLogin'>
       <h1>Login</h1>
        <FormGroup id='loginForm'>
@@ -118,7 +117,7 @@ function Login() {
    
     </div>
            
-    </body>
+    </div>
   )
 }
 

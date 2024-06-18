@@ -6,20 +6,18 @@ header{
 }
 .navbar {
   display: flex;
-  position:absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
   z-index: 1000;
   margin: 0;
-  justify-content: space-around;
+  justify-content: space-between;
   background:var(--primary) ; 
   align-items: center;
   height: 4rem;
+  padding:0 3rem;
+  
 }
-
   /* Estilos para los enlaces (links) */
-  .navbar .link {
+.navbar .link {
     color:var(--back-text); 
     text-decoration: none;
     margin-right: 1rem; 
@@ -36,4 +34,3 @@ header{
     font-size: 1.5rem; 
     font-weight: 700; 
   }
-  
