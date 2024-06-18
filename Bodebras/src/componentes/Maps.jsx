@@ -7,7 +7,7 @@ import {
   DirectionsService,
   DirectionsRenderer,
 } from "@react-google-maps/api";
-import { MY_API_KEY } from "../../src/App";
+
 import styled from "styled-components";
 
 const StyledContainer =  styled("div")(() => ({
@@ -99,7 +99,7 @@ const GoogleMapContainer = () => {
 
   return (
     <StyledContainer>
-      <LoadScript googleMapsApiKey={MY_API_KEY} libraries={["places"]}>
+      <LoadScript googleMapsApiKey={REACT_APP_MY_API_KEY} libraries={["places"]}>
         <GoogleMap
           onLoad={onMapLoad}
           mapContainerStyle={{ width: "100%", height: "100%" }}
